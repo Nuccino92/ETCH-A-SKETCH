@@ -1,0 +1,30 @@
+* {
+    margin: 0; padding: 0; border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+header {
+    padding: 40px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+#container {
+    position: absolute;
+    display: grid;
+    z-index: 100;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%);
+    top: 240px;
+    left: 50%;
+}
