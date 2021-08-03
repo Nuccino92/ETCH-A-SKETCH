@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 html {
-    /* background-image: url(./pics/table.jpg); */
+    background-image: url(./pics/table.jpg);
     background-size: cover;
     background-color: rosybrown;
 }
@@ -14,15 +14,16 @@ html, body {
 .buttons-container {
     position: absolute;
     right: 30%;
-    top: 10%;
+    top: 8.5%;
 }
 h1 {  
-    font-size: 50px;
+    font-size: 62px;
     text-align: center;
     margin-top: -20px;
-    color: rgb(161, 161, 46);
+    color: rgb(177, 177, 51);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 30px;
+    text-shadow: 3px 0 rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 3px 0 rgb(0, 0, 0);
 }
 .grid {
     background-image: url(./pics/etch-a-sketch.png);
@@ -41,18 +42,26 @@ h1 {
    position: absolute;
    display: flex;
    justify-content: space-around;
-   margin-top: 60px;
-   margin-left: 90px;
+   margin-top: 40px;
+   margin-left: 105px;
 }
 .btn {
-    padding: 15px 20px;
+    padding: 14px 20px;
     background: rgb(26, 83, 190);
     font-size: 15px;
     border: 1px solid black;
     border-radius: 4px;
+    box-shadow: 0px 1px 10px 1px black;
+    background-image: linear-gradient(120deg, rgb(161, 161, 46), rgb(163, 159, 159));
+    font-family: monospace;
+    font-weight: bolder;
 }
 .btn:hover {
     cursor: pointer;
+    transform: scale(1.08)
+}
+.btn:active {
+    transform: scale(1.04);
 }
 .slider-container {
     margin-left: -180px;
@@ -62,9 +71,9 @@ h1 {
     transform: rotate(270deg);
     width: 20%;
     -webkit-appearance: none;
-    background: red;
+    background: rgb(224, 44, 44);
     border: 1px solid black;
-    opacity: .7;
+    opacity: .89;
     border-radius: 10px;
     box-shadow: 0px 1px 10px 1px black;
 }
@@ -73,13 +82,14 @@ h1 {
     cursor: grabbing;
 }
 .slider-value {
-    font-size: 40px;
-    background-color: rgb(238, 131, 99);
+    font-size: 30px;
+    background-image: linear-gradient(100deg, rgb(134, 144, 16), rgb(180, 173, 109));
     position: absolute;
-    padding: 3px 17px;
+    padding: 3px 19px;
     margin-left: 71px;
     margin-top: 100px;
-    border-radius: 10px;
-    opacity: .5;
-    box-shadow: 0px 1px 10px 1px black;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 1px rgb(34, 37, 4);
+    font-family: monospace;
+    font-weight: bold;
 }
